@@ -1,0 +1,6 @@
+framework module Pods_SympathyMed {
+  umbrella header "Pods-SympathyMed-umbrella.h"
+
+  export *
+  module * { export * }
+}
