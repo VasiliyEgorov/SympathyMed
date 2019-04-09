@@ -63,7 +63,7 @@ class CameraViewController: UIViewController {
             let cancelAction = UIAlertAction.init(title: NSLocalizedString("Ok", comment: "Alert Ok button"), style: .cancel, handler: nil)
             alertController.addAction(cancelAction)
             let settingsAction = UIAlertAction.init(title: NSLocalizedString("Settings", comment: "Button to open system settings"), style: .default, handler: { (action) in
-                UIApplication.shared.open(URL.init(string: UIApplicationOpenSettingsURLString)!, options: [:], completionHandler: nil)
+                UIApplication.shared.open(URL.init(string: UIApplication.openSettingsURLString)!, options: convertToUIApplicationOpenExternalURLOptionsKeyDictionary([:]), completionHandler: nil)
             })
             alertController.addAction(settingsAction)
             self.present(alertController, animated: true, completion: nil)
@@ -157,4 +157,9 @@ class CameraViewController: UIViewController {
     }
     
  
+}
+
+// Helper function inserted by Swift 4.2 migrator.
+fileprivate func convertToUIApplicationOpenExternalURLOptionsKeyDictionary(_ input: [String: Any]) -> [UIApplication.OpenExternalURLOptionsKey: Any] {
+	return Dictionary(uniqueKeysWithValues: input.map { key, value in (UIApplication.OpenExternalURLOptionsKey(rawValue: key), value)})
 }

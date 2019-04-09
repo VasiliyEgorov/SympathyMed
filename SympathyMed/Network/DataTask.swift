@@ -25,7 +25,7 @@ class DataTask: Hashable, Equatable {
     
     // MARK: - Hashable
     
-    var hashValue: Int {
-        return taskId.hashValue
+    func hash(into hasher: inout Hasher) {
+        return hasher.combine(taskId)
     }
 }

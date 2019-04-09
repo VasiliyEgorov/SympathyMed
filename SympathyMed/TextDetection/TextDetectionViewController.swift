@@ -20,8 +20,8 @@ class TextDetectionViewController: CameraViewController {
         super.viewDidLoad()
       
         configurePreviewLayerWith(videoView: videoLayerView)
-        videoLayerView.bringSubview(toFront: msgLabel)
-        videoLayerView.bringSubview(toFront: captionView)
+        videoLayerView.bringSubviewToFront(msgLabel)
+        videoLayerView.bringSubviewToFront(captionView)
         textDetection = TextDetectionHandler.init(preview: videoLayerView, captionView: captionView)
         setupSessionWith(textDetection: textDetection)
         self.captionView.captureDevice = captureDevice

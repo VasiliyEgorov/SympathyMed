@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
-        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -21,10 +19,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CIo-QL-Kph">
-                                <rect key="frame" x="0.0" y="140" width="375" height="169"/>
+                                <rect key="frame" x="0.0" y="76" width="375" height="190.5"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HF7-X2-8xf" customClass="MainScreenButton" customModule="SympathyMed" customModuleProvider="target">
-                                        <rect key="frame" x="38" y="54" width="299.5" height="60"/>
+                                        <rect key="frame" x="37.5" y="65" width="300" height="60"/>
                                         <color key="backgroundColor" red="0.41568627450980389" green="0.20784313725490194" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="HF7-X2-8xf" secondAttribute="height" multiplier="5:1" id="88i-hx-BP3"/>
@@ -56,10 +54,10 @@
                                 </constraints>
                             </view>
                             <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o96-pC-kQk">
-                                <rect key="frame" x="0.0" y="309" width="375" height="169"/>
+                                <rect key="frame" x="0.0" y="266.5" width="375" height="190"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q7D-Ba-tkC" customClass="MainScreenButton" customModule="SympathyMed" customModuleProvider="target">
-                                        <rect key="frame" x="38" y="54.5" width="299.5" height="60"/>
+                                        <rect key="frame" x="37.5" y="65" width="300" height="60"/>
                                         <color key="backgroundColor" red="0.094117647058823528" green="0.32941176470588235" blue="0.63529411764705879" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="Q7D-Ba-tkC" secondAttribute="height" multiplier="5:1" id="ltf-Am-cTw"/>
@@ -90,10 +88,10 @@
                                 </constraints>
                             </view>
                             <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hpf-eJ-Nf1">
-                                <rect key="frame" x="0.0" y="478" width="375" height="169"/>
+                                <rect key="frame" x="0.0" y="456.5" width="375" height="190.5"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DHd-Nr-c3N" customClass="MainScreenButton" customModule="SympathyMed" customModuleProvider="target">
-                                        <rect key="frame" x="38" y="54.5" width="299.5" height="60"/>
+                                        <rect key="frame" x="37.5" y="65.5" width="300" height="60"/>
                                         <color key="backgroundColor" red="0.31372549019607843" green="0.65098039215686276" blue="0.51764705882352935" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="DHd-Nr-c3N" secondAttribute="height" multiplier="5 : 1" id="Jfn-u7-DuR"/>
@@ -113,7 +111,7 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dQ7-nh-9Lg">
-                                        <rect key="frame" x="8" y="168" width="359" height="1"/>
+                                        <rect key="frame" x="8" y="189.5" width="359" height="1"/>
                                         <color key="backgroundColor" red="0.862662672996521" green="0.86280471086502075" blue="0.86263245344161987" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1" id="RV3-GP-C9B"/>
@@ -135,7 +133,7 @@
                                 </constraints>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchScreen" translatesAutoresizingMaskIntoConstraints="NO" id="9Bk-zh-JOU">
-                                <rect key="frame" x="16" y="60" width="343" height="80"/>
+                                <rect key="frame" x="16" y="60" width="343" height="16"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7rr-kj-1pC">
                                 <rect key="frame" x="0.0" y="647" width="375" height="20"/>
@@ -202,7 +200,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nRg-kl-mHC" customClass="CaptionView" customModule="SympathyMed" customModuleProvider="target">
-                                        <rect key="frame" x="65.5" y="272" width="244.5" height="122"/>
+                                        <rect key="frame" x="65.5" y="272.5" width="244" height="122"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="upperLeft" translatesAutoresizingMaskIntoConstraints="NO" id="d6X-Dj-Cw0">
                                                 <rect key="frame" x="100" y="40" width="24.5" height="24.5"/>
@@ -211,7 +209,7 @@
                                                 </constraints>
                                             </imageView>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="upperRight" translatesAutoresizingMaskIntoConstraints="NO" id="vtH-xh-OUJ">
-                                                <rect key="frame" x="119.5" y="40" width="25" height="24.5"/>
+                                                <rect key="frame" x="119.5" y="40" width="24.5" height="24.5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="vtH-xh-OUJ" secondAttribute="height" multiplier="1:1" id="Qbs-f0-MqA"/>
                                                 </constraints>
@@ -223,7 +221,7 @@
                                                 </constraints>
                                             </imageView>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lowerRight" translatesAutoresizingMaskIntoConstraints="NO" id="dem-eq-IBc">
-                                                <rect key="frame" x="119.5" y="57.5" width="25" height="24.5"/>
+                                                <rect key="frame" x="119.5" y="57.5" width="24.5" height="24.5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="dem-eq-IBc" secondAttribute="height" multiplier="1:1" id="6Tj-wg-ZNW"/>
                                                 </constraints>
@@ -293,7 +291,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FEB-Ab-kOL" customClass="RegistrationResultLabel" customModule="SympathyMed" customModuleProvider="target">
-                                <rect key="frame" x="8" y="404" width="359" height="48"/>
+                                <rect key="frame" x="8" y="404.5" width="359" height="47.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="FEB-Ab-kOL" secondAttribute="height" multiplier="15:2" id="dwm-aa-ucH"/>
                                 </constraints>
@@ -332,10 +330,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sniffLogoMobile" translatesAutoresizingMaskIntoConstraints="NO" id="Oo2-fs-rpv">
-                                <rect key="frame" x="37.5" y="156" width="300" height="211"/>
+                                <rect key="frame" x="37.5" y="156" width="300" height="211.5"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uIy-Dc-fkb">
-                                <rect key="frame" x="8" y="373" width="359" height="1"/>
+                                <rect key="frame" x="8" y="373.5" width="359" height="1"/>
                                 <color key="backgroundColor" red="0.86266267299999999" green="0.86280471089999999" blue="0.86263245340000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="coS-u8-Kyi"/>
@@ -363,7 +361,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kzR-WO-V8v" customClass="MainScreenButton" customModule="SympathyMed" customModuleProvider="target">
-                                <rect key="frame" x="307" y="26" width="56" height="37"/>
+                                <rect key="frame" x="307" y="26" width="56" height="36.5"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="kzR-WO-V8v" secondAttribute="height" multiplier="23:15" id="f8j-p2-rfI"/>
@@ -564,6 +562,64 @@
             </objects>
             <point key="canvasLocation" x="2775" y="1097"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="ai4-kI-E9a">
+            <objects>
+                <viewController storyboardIdentifier="WebViewController" id="Z89-xt-Myf" sceneMemberID="viewController">
+                    <view key="view" alpha="0.80000000000000004" contentMode="scaleToFill" id="T9i-R3-ZEn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="l8X-SD-5ak">
+                                <rect key="frame" x="0.0" y="106" width="375" height="561"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="33" translatesAutoresizingMaskIntoConstraints="NO" id="4SO-LO-odu">
+                                <rect key="frame" x="0.0" y="77" width="358" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fpZ-u7-qPL">
+                                        <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z89-og-3zs">
+                                        <rect key="frame" x="79" y="0.0" width="46" height="30"/>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cXy-88-Dxa">
+                                        <rect key="frame" x="158" y="0.0" width="42" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PWJ-VR-xsO">
+                                        <rect key="frame" x="233" y="0.0" width="46" height="30"/>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HVP-3N-NRJ">
+                                        <rect key="frame" x="312" y="0.0" width="46" height="30"/>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8gK-A2-ory">
+                                <rect key="frame" x="119" y="31" width="137" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="rt9-kL-Jhs"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FIh-1l-mdB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3645.5999999999999" y="1092.5037481259371"/>
+        </scene>
         <!--Custom Nav Controller-->
         <scene sceneID="0Vx-W2-cev">
             <objects>
@@ -603,12 +659,12 @@
     </scenes>
     <resources>
         <image name="backButton" width="13" height="24"/>
-        <image name="doneThick" width="137" height="100"/>
-        <image name="launchScreen" width="460" height="80"/>
-        <image name="lowerLeft" width="84" height="85"/>
+        <image name="doneThick" width="137" height="100.5"/>
+        <image name="launchScreen" width="460.5" height="80.5"/>
+        <image name="lowerLeft" width="84.5" height="85"/>
         <image name="lowerRight" width="85" height="85"/>
-        <image name="sniffLogoMobile" width="500" height="429"/>
-        <image name="upperLeft" width="84" height="84"/>
-        <image name="upperRight" width="85" height="84"/>
+        <image name="sniffLogoMobile" width="500.5" height="429"/>
+        <image name="upperLeft" width="84.5" height="84.5"/>
+        <image name="upperRight" width="85" height="84.5"/>
     </resources>
 </document>

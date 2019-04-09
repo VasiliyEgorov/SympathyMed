@@ -28,7 +28,7 @@ class CameraNavController: UINavigationController {
         self.view.backgroundColor = .clear
         self.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
         self.navigationBar.tintColor = .white
-        self.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor : UIColor.white]
+        self.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor : UIColor.white]
         self.navigationBar.backIndicatorImage = UIImage.init(named: "backButton.png")
         self.navigationBar.backIndicatorTransitionMaskImage = UIImage.init(named: "backButton.png")
     }

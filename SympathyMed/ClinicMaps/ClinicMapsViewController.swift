@@ -98,7 +98,7 @@ extension ClinicMapsViewController: CloseButtonDelegate {
     func closeButton(sender: UIButton) {
         self.markerView?.removeFromSuperview()
         UIView.animate(withDuration: 0.3) {
-            self.mapView.padding = UIEdgeInsetsMake(self.view.safeAreaInsets.top, 0, 0, 0)
+            self.mapView.padding = UIEdgeInsets.init(top: self.view.safeAreaInsets.top, left: 0, bottom: 0, right: 0)
         }
     }
 }
@@ -125,7 +125,7 @@ extension ClinicMapsViewController: GMSMapViewDelegate {
         let device = Device.init(rawValue: UIScreen.main.bounds.height)
         
         switch device {
-            case .IphoneX?: originY = guide.layoutFrame.size.height
+            case .IphoneX_Xs?,.IphoneXsMax_Xr?: originY = guide.layoutFrame.size.height
             default: originY = self.view.frame.size.height - height
         }
         
@@ -137,7 +137,7 @@ extension ClinicMapsViewController: GMSMapViewDelegate {
         markerView.telephoneLabel.text = clinicMarker.clinic.telephone
         markerView.websiteLabel.text = clinicMarker.clinic.website
         UIView.animate(withDuration: 0.3) {
-            self.mapView.padding = UIEdgeInsetsMake(self.view.safeAreaInsets.top, 0, markerView.frame.size.height, 0)
+            self.mapView.padding = UIEdgeInsets.init(top: self.view.safeAreaInsets.top, left: 0, bottom: markerView.frame.size.height, right: 0)
         }
         
         return true
@@ -159,7 +159,7 @@ extension ClinicMapsViewController: CLLocationManagerDelegate {
             let cancelAction = UIAlertAction.init(title: NSLocalizedString("Ok", comment: "Alert Ok button"), style: .cancel, handler: nil)
             alertController.addAction(cancelAction)
             let settingsAction = UIAlertAction.init(title: NSLocalizedString("Settings", comment: "Button to open system settings"), style: .default, handler: { (action) in
-                UIApplication.shared.open(URL.init(string: UIApplicationOpenSettingsURLString)!, options: [:], completionHandler: nil)
+                UIApplication.shared.open(URL.init(string: UIApplication.openSettingsURLString)!, options: convertToUIApplicationOpenExternalURLOptionsKeyDictionary([:]), completionHandler: nil)
             })
             alertController.addAction(settingsAction)
             self.present(alertController, animated: true, completion: nil)
@@ -174,4 +174,9 @@ extension ClinicMapsViewController: CLLocationManagerDelegate {
         locationManager.stopUpdatingLocation()
         
     }
+}
+
+// Helper function inserted by Swift 4.2 migrator.
+fileprivate func convertToUIApplicationOpenExternalURLOptionsKeyDictionary(_ input: [String: Any]) -> [UIApplication.OpenExternalURLOptionsKey: Any] {
+	return Dictionary(uniqueKeysWithValues: input.map { key, value in (UIApplication.OpenExternalURLOptionsKey(rawValue: key), value)})
 }

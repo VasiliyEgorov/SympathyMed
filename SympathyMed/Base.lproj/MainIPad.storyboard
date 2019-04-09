@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="ipad9_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
-        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -21,10 +19,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CIo-QL-Kph">
-                                <rect key="frame" x="0.0" y="340" width="768" height="221.5"/>
+                                <rect key="frame" x="0.0" y="276" width="768" height="242.5"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HF7-X2-8xf" customClass="MainScreenButton" customModule="SympathyMed" customModuleProvider="target">
-                                        <rect key="frame" x="211.5" y="75.5" width="346" height="69"/>
+                                        <rect key="frame" x="211" y="87" width="346" height="69"/>
                                         <color key="backgroundColor" red="0.41568627450980389" green="0.20784313725490194" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="HF7-X2-8xf" secondAttribute="height" multiplier="5:1" id="88i-hx-BP3"/>
@@ -56,10 +54,10 @@
                                 </constraints>
                             </view>
                             <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o96-pC-kQk">
-                                <rect key="frame" x="0.0" y="561.5" width="768" height="221"/>
+                                <rect key="frame" x="0.0" y="518.5" width="768" height="243"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q7D-Ba-tkC" customClass="MainScreenButton" customModule="SympathyMed" customModuleProvider="target">
-                                        <rect key="frame" x="211.5" y="76" width="346" height="69"/>
+                                        <rect key="frame" x="211" y="87" width="346" height="69"/>
                                         <color key="backgroundColor" red="0.094117647058823528" green="0.32941176470588235" blue="0.63529411764705879" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="Q7D-Ba-tkC" secondAttribute="height" multiplier="5:1" id="ltf-Am-cTw"/>
@@ -90,10 +88,10 @@
                                 </constraints>
                             </view>
                             <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hpf-eJ-Nf1">
-                                <rect key="frame" x="0.0" y="782.5" width="768" height="221.5"/>
+                                <rect key="frame" x="0.0" y="761.5" width="768" height="242.5"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DHd-Nr-c3N" customClass="MainScreenButton" customModule="SympathyMed" customModuleProvider="target">
-                                        <rect key="frame" x="211.5" y="76.5" width="346" height="69"/>
+                                        <rect key="frame" x="211" y="86.5" width="346" height="69"/>
                                         <color key="backgroundColor" red="0.31372549019607843" green="0.65098039215686276" blue="0.51764705882352935" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="DHd-Nr-c3N" secondAttribute="height" multiplier="5 : 1" id="Jfn-u7-DuR"/>
@@ -113,7 +111,7 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dQ7-nh-9Lg">
-                                        <rect key="frame" x="8" y="220.5" width="752" height="1"/>
+                                        <rect key="frame" x="8" y="241.5" width="752" height="1"/>
                                         <color key="backgroundColor" red="0.862662672996521" green="0.86280471086502075" blue="0.86263245344161987" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1" id="RV3-GP-C9B"/>
@@ -135,7 +133,7 @@
                                 </constraints>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchScreen" translatesAutoresizingMaskIntoConstraints="NO" id="9Bk-zh-JOU">
-                                <rect key="frame" x="0.0" y="140" width="768" height="80"/>
+                                <rect key="frame" x="0.0" y="140" width="768" height="16"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7rr-kj-1pC">
                                 <rect key="frame" x="0.0" y="1004" width="768" height="20"/>
@@ -202,28 +200,28 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nRg-kl-mHC" customClass="CaptionView" customModule="SympathyMed" customModuleProvider="target">
-                                        <rect key="frame" x="230.5" y="434.5" width="308" height="154"/>
+                                        <rect key="frame" x="230.5" y="435" width="307" height="154"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="upperLeft" translatesAutoresizingMaskIntoConstraints="NO" id="d6X-Dj-Cw0">
-                                                <rect key="frame" x="100" y="40" width="31" height="31.5"/>
+                                                <rect key="frame" x="100" y="40" width="30.5" height="31"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="d6X-Dj-Cw0" secondAttribute="height" multiplier="1:1" id="HYI-s7-tZP"/>
                                                 </constraints>
                                             </imageView>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="upperRight" translatesAutoresizingMaskIntoConstraints="NO" id="vtH-xh-OUJ">
-                                                <rect key="frame" x="177" y="40" width="31" height="30.5"/>
+                                                <rect key="frame" x="176.5" y="40" width="30.5" height="31"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="vtH-xh-OUJ" secondAttribute="height" multiplier="1:1" id="Qbs-f0-MqA"/>
                                                 </constraints>
                                             </imageView>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lowerLeft" translatesAutoresizingMaskIntoConstraints="NO" id="aCd-Qo-R80">
-                                                <rect key="frame" x="100" y="82.5" width="31" height="31.5"/>
+                                                <rect key="frame" x="100" y="83" width="30.5" height="31"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="aCd-Qo-R80" secondAttribute="height" multiplier="1:1" id="s8n-DY-Iha"/>
                                                 </constraints>
                                             </imageView>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lowerRight" translatesAutoresizingMaskIntoConstraints="NO" id="dem-eq-IBc">
-                                                <rect key="frame" x="177" y="83.5" width="31" height="30.5"/>
+                                                <rect key="frame" x="176.5" y="83" width="30.5" height="31"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="dem-eq-IBc" secondAttribute="height" multiplier="1:1" id="6Tj-wg-ZNW"/>
                                                 </constraints>
@@ -293,7 +291,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FEB-Ab-kOL" customClass="RegistrationResultLabel" customModule="SympathyMed" customModuleProvider="target">
-                                <rect key="frame" x="153.5" y="716.5" width="461" height="61.5"/>
+                                <rect key="frame" x="153.5" y="717" width="461" height="61.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="FEB-Ab-kOL" secondAttribute="height" multiplier="15:2" id="dwm-aa-ucH"/>
                                 </constraints>
@@ -302,16 +300,16 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="GhQ-SK-6DR">
-                                <rect key="frame" x="153.5" y="879" width="461" height="63.5"/>
+                                <rect key="frame" x="153.5" y="879.5" width="461" height="63"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="doneThick" translatesAutoresizingMaskIntoConstraints="NO" id="G0x-BE-tbj">
-                                        <rect key="frame" x="0.0" y="0.0" width="63" height="63.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="63" height="63"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="G0x-BE-tbj" secondAttribute="height" multiplier="1:1" id="Gkk-RC-NLB"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VmN-bx-MjQ" customClass="RegistrationResultLabel" customModule="SympathyMed" customModuleProvider="target">
-                                        <rect key="frame" x="69" y="0.0" width="392" height="63.5"/>
+                                        <rect key="frame" x="69" y="0.0" width="392" height="63"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -332,20 +330,20 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sniffLogoMobile" translatesAutoresizingMaskIntoConstraints="NO" id="Oo2-fs-rpv">
-                                <rect key="frame" x="153.5" y="315" width="461" height="300.5"/>
+                                <rect key="frame" x="153.5" y="315" width="461" height="301"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Oo2-fs-rpv" secondAttribute="height" multiplier="688:449" id="gpx-Z9-Zyw"/>
                                 </constraints>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uIy-Dc-fkb">
-                                <rect key="frame" x="8" y="665.5" width="752" height="1"/>
+                                <rect key="frame" x="8" y="666" width="752" height="1"/>
                                 <color key="backgroundColor" red="0.86266267299999999" green="0.86280471089999999" blue="0.86263245340000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="coS-u8-Kyi"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Zj-sc-KPV">
-                                <rect key="frame" x="8" y="828" width="752" height="1"/>
+                                <rect key="frame" x="8" y="828.5" width="752" height="1"/>
                                 <color key="backgroundColor" red="0.86266267299999999" green="0.86280471089999999" blue="0.86263245340000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="Qd7-8c-ZeW"/>
@@ -438,7 +436,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Uo-dL-VSl" customClass="MainScreenButton" customModule="SympathyMed" customModuleProvider="target">
-                                <rect key="frame" x="230.5" y="447" width="307" height="68"/>
+                                <rect key="frame" x="230.5" y="453" width="307" height="68"/>
                                 <color key="backgroundColor" red="0.41568627450980389" green="0.20784313725490194" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="4Uo-dL-VSl" secondAttribute="height" multiplier="4.5 : 1" id="LGq-gN-Qzj"/>
@@ -451,7 +449,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter code" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="XsW-NM-dBh" customClass="RegistrationTitleLabel" customModule="SympathyMed" customModuleProvider="target">
-                                <rect key="frame" x="77" y="184" width="614" height="61.5"/>
+                                <rect key="frame" x="77" y="190" width="614" height="61.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="XsW-NM-dBh" secondAttribute="height" multiplier="10:1" id="ihS-Xf-HuU"/>
                                 </constraints>
@@ -460,7 +458,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="t8C-3E-BC7" customClass="CodeTextField" customModule="SympathyMed" customModuleProvider="target">
-                                <rect key="frame" x="153.5" y="305.5" width="461" height="61.5"/>
+                                <rect key="frame" x="153.5" y="311.5" width="461" height="61.5"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="t8C-3E-BC7" secondAttribute="height" multiplier="15:2" id="eSs-k1-yWj"/>
@@ -511,7 +509,7 @@
                 <navigationController storyboardIdentifier="TextDetectionNavController" automaticallyAdjustsScrollViewInsets="NO" id="21w-sB-WKd" customClass="CameraNavController" customModule="SympathyMed" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="tff-vs-jcT">
-                        <rect key="frame" x="0.0" y="20" width="768" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="768" height="50"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -532,7 +530,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l81-7G-uM5" customClass="GMSMapView">
-                                <rect key="frame" x="0.0" y="64" width="768" height="960"/>
+                                <rect key="frame" x="0.0" y="70" width="768" height="954"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                         </subviews>
@@ -571,7 +569,7 @@
                 <navigationController storyboardIdentifier="RegistrationNavController" automaticallyAdjustsScrollViewInsets="NO" id="0iH-3f-ntK" customClass="CustomNavController" customModule="SympathyMed" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="y55-2M-DLO">
-                        <rect key="frame" x="0.0" y="20" width="768" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="768" height="50"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -589,7 +587,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vs2-iu-hIx" customClass="CustomNavController" customModule="SympathyMed" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ne4-mX-LuG">
-                        <rect key="frame" x="0.0" y="20" width="768" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="768" height="50"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -604,12 +602,12 @@
     </scenes>
     <resources>
         <image name="backButton" width="13" height="24"/>
-        <image name="doneThick" width="137" height="100"/>
-        <image name="launchScreen" width="460" height="80"/>
-        <image name="lowerLeft" width="84" height="85"/>
+        <image name="doneThick" width="137" height="100.5"/>
+        <image name="launchScreen" width="460.5" height="80.5"/>
+        <image name="lowerLeft" width="84.5" height="85"/>
         <image name="lowerRight" width="85" height="85"/>
-        <image name="sniffLogoMobile" width="500" height="429"/>
-        <image name="upperLeft" width="84" height="84"/>
-        <image name="upperRight" width="85" height="84"/>
+        <image name="sniffLogoMobile" width="500.5" height="429"/>
+        <image name="upperLeft" width="84.5" height="84.5"/>
+        <image name="upperRight" width="85" height="84.5"/>
     </resources>
 </document>

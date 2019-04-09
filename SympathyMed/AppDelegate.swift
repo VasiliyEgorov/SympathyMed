@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     let stateChecker = StateChecker()
     
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         GMSServices.provideAPIKey(mapsKey)
         self.stateChecker.saveState(isAnimationAllowed: true)
@@ -25,7 +25,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let device = Device.init(rawValue: UIScreen.main.bounds.height)
         
         switch device {
-            case .Iphone5?,.Iphone6_7?,.Iphone6_7_plus?,.IphoneX?:
+            case .Iphone5?,.Iphone6_7?,.Iphone6_7_plus?,.IphoneX_Xs?,.IphoneXsMax_Xr?:
                 setStoryboard(name: "MainIPhone", controllerIdentifier: "MainMenuViewController")
             case .IpadMini_Air?,.IpadPro10_5?,.IpadPro12_9?:
                 setStoryboard(name: "MainIPad", controllerIdentifier: "MainMenuViewController")

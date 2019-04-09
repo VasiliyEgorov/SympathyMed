@@ -48,9 +48,9 @@ class RegistrationViewController: UIViewController {
     }
 
     func subscribeOnNotifications() {
-        NotificationCenter.default.addObserver(self, selector: #selector(UITextFieldTextDidChange(notification:)), name: .UITextFieldTextDidChange, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(UIKeyboardDidShow(notification:)), name: .UIKeyboardDidShow, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(UIKeyboardDidHide(notification:)), name: .UIKeyboardDidHide, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(UITextFieldTextDidChange(notification:)), name: UITextField.textDidChangeNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(UIKeyboardDidShow(notification:)), name: UIResponder.keyboardDidShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(UIKeyboardDidHide(notification:)), name: UIResponder.keyboardDidHideNotification, object: nil)
     }
     
     func changeConstraints() {
@@ -59,7 +59,8 @@ class RegistrationViewController: UIViewController {
             case .Iphone5?: titleTopConstraint.constant = 30
             case .Iphone6_7_plus?: titleTopConstraint.constant = 85
             case .Iphone6_7?: titleTopConstraint.constant = 70
-            case .IphoneX?: titleTopConstraint.constant = 85
+            case .IphoneX_Xs?: titleTopConstraint.constant = 85
+            case .IphoneXsMax_Xr?: titleTopConstraint.constant = 85
         default: return
             self.view.updateConstraintsIfNeeded()
         }
@@ -120,7 +121,7 @@ class RegistrationViewController: UIViewController {
         var controller : UIViewController?
         
         switch device {
-        case .Iphone5?,.Iphone6_7?,.Iphone6_7_plus?,.IphoneX?:
+        case .Iphone5?,.Iphone6_7?,.Iphone6_7_plus?,.IphoneX_Xs?,.IphoneXsMax_Xr?:
             controller = setStoryboard(name: "MainIPhone", controllerIdentifier: "ResultsTextRecognitionController")
         case .IpadMini_Air?,.IpadPro10_5?,.IpadPro12_9?:
             controller = setStoryboard(name: "MainIPad", controllerIdentifier: "ResultsTextRecognitionController")
@@ -151,7 +152,7 @@ class RegistrationViewController: UIViewController {
     }
     @objc func UIKeyboardDidShow(notification: Notification) {
     
-        guard let keyboardFrame = notification.userInfo?[UIKeyboardFrameEndUserInfoKey] as? NSValue else { return }
+        guard let keyboardFrame = notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue else { return }
         let codeTxtFieldLowerPoint = codeTextField.frame.origin.y + codeTextField.frame.size.height
         let keyboardHighestPoint = self.view.frame.size.height - keyboardFrame.cgRectValue.height
         let delta = keyboardHighestPoint - codeTxtFieldLowerPoint
