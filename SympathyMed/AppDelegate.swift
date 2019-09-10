@@ -27,7 +27,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         switch device {
             case .Iphone5?,.Iphone6_7?,.Iphone6_7_plus?,.IphoneX_Xs?,.IphoneXsMax_Xr?:
                 setStoryboard(name: "MainIPhone", controllerIdentifier: "MainMenuViewController")
-            case .IpadMini_Air?,.IpadPro10_5?,.IpadPro12_9?:
+            case .IpadMini_Air?,.IpadPro10_5?,.Ipad11?,.IpadPro12_9?:
                 setStoryboard(name: "MainIPad", controllerIdentifier: "MainMenuViewController")
         default: break
         }

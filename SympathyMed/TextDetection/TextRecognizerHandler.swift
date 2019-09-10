@@ -65,7 +65,7 @@ class TextRecognizerHandler {
             let model = try VNCoreMLModel(for:OCR().model)
             return VNCoreMLRequest(model: model, completionHandler: { [weak self] (VNRequest, error) in
                 guard let observations = VNRequest.results as? [VNClassificationObservation]
-                    else {fatalError("unexpected result") }
+                    else { return }//fatalError("unexpected result") }
                 guard let best = observations.first
                     else { fatalError("cant get best result")}
                 
@@ -138,8 +138,8 @@ class TextRecognizerHandler {
                 }
                 
                 //APPEND RECOGNIZED CHARS FOR THAT REGION
-                self?.recognizedCode.append(self?.recognizedRegion ?? "")
-             //   print(self?.recognizedCode)
+                self?.recognizedCode.append(contentsOf: self?.recognizedRegion ?? "")
+                //print(self?.recognizedCode)
             }
             
         })

@@ -123,7 +123,7 @@ class RegistrationViewController: UIViewController {
         switch device {
         case .Iphone5?,.Iphone6_7?,.Iphone6_7_plus?,.IphoneX_Xs?,.IphoneXsMax_Xr?:
             controller = setStoryboard(name: "MainIPhone", controllerIdentifier: "ResultsTextRecognitionController")
-        case .IpadMini_Air?,.IpadPro10_5?,.IpadPro12_9?:
+        case .IpadMini_Air?,.IpadPro10_5?,.Ipad11?,.IpadPro12_9?:
             controller = setStoryboard(name: "MainIPad", controllerIdentifier: "ResultsTextRecognitionController")
         default: break
         }

@@ -13,9 +13,12 @@
 		FF0008E6209998C300E1F745 /* RequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0008E5209998C300E1F745 /* RequestFactory.swift */; };
 		FF0008E82099993500E1F745 /* Code.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0008E72099993500E1F745 /* Code.swift */; };
 		FF0008EF20999B5A00E1F745 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0008EE20999B5A00E1F745 /* RegistrationViewController.swift */; };
+		FF05874B2283641700D41E92 /* PageProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF05874A2283641700D41E92 /* PageProgressView.swift */; };
+		FF05874F2283853200D41E92 /* TouchableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF05874E2283853100D41E92 /* TouchableView.swift */; };
 		FF08EDD120B3511D007D27AD /* ClinicsMarkerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF08EDD020B3511D007D27AD /* ClinicsMarkerView.swift */; };
 		FF08EDD320B35133007D27AD /* ClinicsMarkerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF08EDD220B35133007D27AD /* ClinicsMarkerView.xib */; };
 		FF08EDD520B41F3A007D27AD /* ClinicsMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF08EDD420B41F3A007D27AD /* ClinicsMarker.swift */; };
+		FF21E652225C33780035553E /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF21E651225C33780035553E /* WebViewController.swift */; };
 		FF39910B2094276400DA24EC /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF39910A2094276400DA24EC /* Extensions.swift */; };
 		FF39910D20943A6500DA24EC /* TextDetectionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF39910C20943A6500DA24EC /* TextDetectionHandler.swift */; };
 		FF39910F20953A5C00DA24EC /* CaptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF39910E20953A5C00DA24EC /* CaptionView.swift */; };
@@ -28,6 +31,7 @@
 		FF6259AA20A055D00015D5CF /* TextDetectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6259A920A055D00015D5CF /* TextDetectionViewController.swift */; };
 		FF74478B20C00C11002811A7 /* MainScreenButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF74478A20C00C11002811A7 /* MainScreenButton.swift */; };
 		FF74478D20C15872002811A7 /* StateChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF74478C20C15872002811A7 /* StateChecker.swift */; };
+		FF93537D2327152F0057D207 /* BarImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF93537C2327152E0057D207 /* BarImageView.swift */; };
 		FF94CCFC20C44031003E683B /* spacerCoreMLModel.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = FF94CCFB20C44031003E683B /* spacerCoreMLModel.mlmodel */; };
 		FF94CD3F20C6F602003E683B /* CodeTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF94CD3E20C6F602003E683B /* CodeTextField.swift */; };
 		FF94CD4120C6F703003E683B /* RegistrationTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF94CD4020C6F703003E683B /* RegistrationTitleLabel.swift */; };
@@ -58,9 +62,12 @@
 		FF0008E5209998C300E1F745 /* RequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestFactory.swift; sourceTree = "<group>"; };
 		FF0008E72099993500E1F745 /* Code.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Code.swift; sourceTree = "<group>"; };
 		FF0008EE20999B5A00E1F745 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		FF05874A2283641700D41E92 /* PageProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageProgressView.swift; sourceTree = "<group>"; };
+		FF05874E2283853100D41E92 /* TouchableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchableView.swift; sourceTree = "<group>"; };
 		FF08EDD020B3511D007D27AD /* ClinicsMarkerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClinicsMarkerView.swift; sourceTree = "<group>"; };
 		FF08EDD220B35133007D27AD /* ClinicsMarkerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ClinicsMarkerView.xib; sourceTree = "<group>"; };
 		FF08EDD420B41F3A007D27AD /* ClinicsMarker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClinicsMarker.swift; sourceTree = "<group>"; };
+		FF21E651225C33780035553E /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		FF39910A2094276400DA24EC /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		FF39910C20943A6500DA24EC /* TextDetectionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextDetectionHandler.swift; sourceTree = "<group>"; };
 		FF39910E20953A5C00DA24EC /* CaptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptionView.swift; sourceTree = "<group>"; };
@@ -75,6 +82,7 @@
 		FF6259A920A055D00015D5CF /* TextDetectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextDetectionViewController.swift; sourceTree = "<group>"; };
 		FF74478A20C00C11002811A7 /* MainScreenButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenButton.swift; sourceTree = "<group>"; };
 		FF74478C20C15872002811A7 /* StateChecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateChecker.swift; sourceTree = "<group>"; };
+		FF93537C2327152E0057D207 /* BarImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarImageView.swift; sourceTree = "<group>"; };
 		FF94CCFB20C44031003E683B /* spacerCoreMLModel.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = spacerCoreMLModel.mlmodel; sourceTree = "<group>"; };
 		FF94CD3E20C6F602003E683B /* CodeTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeTextField.swift; sourceTree = "<group>"; };
 		FF94CD4020C6F703003E683B /* RegistrationTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationTitleLabel.swift; sourceTree = "<group>"; };
@@ -233,6 +241,10 @@
 			isa = PBXGroup;
 			children = (
 				FF5CEB2720A5DAEC00E548C9 /* ClinicMapsViewController.swift */,
+				FF21E651225C33780035553E /* WebViewController.swift */,
+				FF05874A2283641700D41E92 /* PageProgressView.swift */,
+				FF05874E2283853100D41E92 /* TouchableView.swift */,
+				FF93537C2327152E0057D207 /* BarImageView.swift */,
 				FFF2D20B20AC87330074F60A /* ClinicsProvider.swift */,
 				FF08EDD420B41F3A007D27AD /* ClinicsMarker.swift */,
 				FF08EDD020B3511D007D27AD /* ClinicsMarkerView.swift */,
@@ -390,6 +402,7 @@
 				FF39910D20943A6500DA24EC /* TextDetectionHandler.swift in Sources */,
 				FF6259AA20A055D00015D5CF /* TextDetectionViewController.swift in Sources */,
 				FFB7D445207C9841006AE10F /* CameraViewController.swift in Sources */,
+				FF05874F2283853200D41E92 /* TouchableView.swift in Sources */,
 				FF08EDD520B41F3A007D27AD /* ClinicsMarker.swift in Sources */,
 				FFB7D441207C97E8006AE10F /* MainMenuViewController.swift in Sources */,
 				FF0008E4209998A900E1F745 /* DataTask.swift in Sources */,
@@ -400,6 +413,7 @@
 				FF94CD4120C6F703003E683B /* RegistrationTitleLabel.swift in Sources */,
 				FF74478B20C00C11002811A7 /* MainScreenButton.swift in Sources */,
 				FF5CEB2420A0830C00E548C9 /* ResultCodeRecognitionViewController.swift in Sources */,
+				FF05874B2283641700D41E92 /* PageProgressView.swift in Sources */,
 				FF39910B2094276400DA24EC /* Extensions.swift in Sources */,
 				FFB7D42D207C9712006AE10F /* AppDelegate.swift in Sources */,
 				FF6259A820A049150015D5CF /* NotificationHandler.swift in Sources */,
@@ -407,9 +421,11 @@
 				FF5CEB2820A5DAEC00E548C9 /* ClinicMapsViewController.swift in Sources */,
 				FF94CD4720C828C8003E683B /* RegistrationResultLabel.swift in Sources */,
 				FFB7D443207C9824006AE10F /* NetworkHandler.swift in Sources */,
+				FF21E652225C33780035553E /* WebViewController.swift in Sources */,
 				FFE39C55209B089600CE0F86 /* CodeRegistrationFromVcHelper.swift in Sources */,
 				FF0008E82099993500E1F745 /* Code.swift in Sources */,
 				FF5CEB2A20A6022900E548C9 /* CameraNavController.swift in Sources */,
+				FF93537D2327152F0057D207 /* BarImageView.swift in Sources */,
 				FF94CD3F20C6F602003E683B /* CodeTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

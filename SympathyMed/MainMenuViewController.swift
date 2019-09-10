@@ -54,7 +54,16 @@ class MainMenuViewController: UIViewController {
     @IBAction func productRecognizeButtonAction(_ sender: UIButton) {
         guard let application = UIApplication.shared.delegate as? AppDelegate else { return }
         guard let window = application.window else { return }
-        let cameraNavController = AppStoryboard.MainIPhone.instance.instantiateViewController(withIdentifier: "TextDetectionNavController")
-        window.rootViewController = cameraNavController
+        let device = Device.init(rawValue: UIScreen.main.bounds.height)
+        
+        switch device {
+        case .Iphone5?,.Iphone6_7?,.Iphone6_7_plus?,.IphoneX_Xs?,.IphoneXsMax_Xr?:
+            let cameraNavController = AppStoryboard.MainIPhone.instance.instantiateViewController(withIdentifier: "TextDetectionNavController")
+            window.rootViewController = cameraNavController
+        case .IpadMini_Air?,.IpadPro10_5?,.Ipad11?,.IpadPro12_9?:
+            let cameraNavController = AppStoryboard.MainIPad.instance.instantiateViewController(withIdentifier: "TextDetectionNavController")
+            window.rootViewController = cameraNavController
+        default: break
+        }
     }
 }

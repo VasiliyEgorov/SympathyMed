@@ -25,7 +25,7 @@ class CodeRegistrationFromVcHelper {
     
   
     func registerCode(code: String, complition: @escaping (CodeResult) -> (), failure: @escaping (ResponseError?) -> ()) {
-        
+        print("send code \(code)")
         self.registerQueue.async { [weak self] in
             
             self?.networkHandler.getCode(taskId: "getCode", code: code, complition: { (codes) in

@@ -16,7 +16,7 @@ class CodeRegistrationFromTxtRecognizerHandler: CodeRegistrationFromVcHelper {
         
         guard code.count == codeLenght else { return nil }
         guard code.rangeOfCharacter(from: CharacterSet.decimalDigits) != nil else { return nil }
-        
+        print(code)
         return code
         
     }

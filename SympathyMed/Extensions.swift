@@ -16,6 +16,7 @@ enum Device : CGFloat {
     case IphoneXsMax_Xr = 896
     case IpadMini_Air = 1024
     case IpadPro10_5 = 1112
+    case Ipad11 = 1194
     case IpadPro12_9 = 1366
 }
 
@@ -31,6 +32,21 @@ enum AppStoryboard: String {
     func viewController<T: UIViewController>(viewControllerClass: T.Type) -> T {
         let storyboardID = (viewControllerClass as UIViewController.Type).storyboardID
         return instance.instantiateViewController(withIdentifier: storyboardID) as! T
+    }
+}
+
+extension UIView {
+    func roundCorners(_ corners: UIRectCorner, radius: CGFloat) {
+        if #available(iOS 11.0, *) {
+            clipsToBounds = true
+            layer.cornerRadius = radius
+            layer.maskedCorners = CACornerMask(rawValue: corners.rawValue)
+        } else {
+            let path = UIBezierPath(roundedRect: bounds, byRoundingCorners: corners, cornerRadii: CGSize(width: radius, height: radius))
+            let mask = CAShapeLayer()
+            mask.path = path.cgPath
+            layer.mask = mask
+        }
     }
 }
 

@@ -107,7 +107,7 @@ class CameraViewController: UIViewController {
         
         session.beginConfiguration()
         
-        session.sessionPreset = .high
+        session.sessionPreset = .photo
         
         guard let captureDevice = AVCaptureDevice.default(for: .video) else {
             setupResult = AVCamSetupResult.AVCamSetupResultSessionConfigurationFailed

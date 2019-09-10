@@ -64,7 +64,7 @@ class ClinicMapsViewController: UIViewController {
     }
     
     func configureMap(coord: CLLocationCoordinate2D) {
-        let camera = GMSCameraPosition.camera(withLatitude: coord.latitude, longitude: coord.longitude, zoom: 0)
+        let camera = GMSCameraPosition.camera(withLatitude: coord.latitude, longitude: coord.longitude, zoom: 4)
         mapView.camera = camera
         mapView.animate(toLocation: coord)
         mapView.isMyLocationEnabled = true
@@ -72,16 +72,19 @@ class ClinicMapsViewController: UIViewController {
     }
     
     func setCameraToNearbyMarker(markers: [ClinicsMarker]) {
-
+        if markers.count > 0 {
         let sortedMarkers = markers.sorted(by: { markerOne, markerTwo in
             let markerOneLocation = CLLocation(latitude: markerOne.position.latitude, longitude: markerOne.position.longitude)
             let markerTwoLocation = CLLocation(latitude: markerTwo.position.latitude, longitude: markerTwo.position.longitude)
-            let metersOne = userLocation!.distance(from: markerOneLocation)
-            let metersTwo = userLocation!.distance(from: markerTwoLocation)
+            guard let metersOne = userLocation?.distance(from: markerOneLocation) else {return false}
+            guard let metersTwo = userLocation?.distance(from: markerTwoLocation) else {return false}
                 return metersOne < metersTwo
         })
        let location = CLLocationCoordinate2DMake(sortedMarkers.first!.clinic.latitude, sortedMarkers.first!.clinic.longitude)
        configureMap(coord: location)
+        } else {
+            fetchClinics()
+        }
     }
     
     // MARK: - Buttons
@@ -102,6 +105,37 @@ extension ClinicMapsViewController: CloseButtonDelegate {
         }
     }
 }
+extension ClinicMapsViewController: OpenBrowserDelegate {
+    func openBrowser(urlString: String) {
+        let device = Device.init(rawValue: UIScreen.main.bounds.height)
+        
+        var webViewController: WebViewController?
+        switch device {
+        case .Iphone5?,.Iphone6_7?,.Iphone6_7_plus?,.IphoneX_Xs?,.IphoneXsMax_Xr?:
+            webViewController = AppStoryboard.MainIPhone.instance.instantiateViewController(withIdentifier: "WebViewController") as? WebViewController
+        case .IpadMini_Air?,.IpadPro10_5?,.Ipad11?,.IpadPro12_9?:
+            webViewController = AppStoryboard.MainIPad.instance.instantiateViewController(withIdentifier: "WebViewController") as? WebViewController
+        default: return
+        }
+        
+        guard let webController = webViewController else { return }
+        webController.urlString = urlString
+        webController.modalPresentationStyle = .overCurrentContext
+     
+        self.addChild(webController)
+        webController.view.frame.origin.y = UIScreen.main.bounds.height
+        self.view.addSubview(webController.view)
+        webController.didMove(toParent: self)
+        UIView.animate(withDuration: 0.5,
+                       delay: 0,
+                       options: [.curveLinear],
+                       animations: {
+                        self.navigationController?.navigationBar.isHidden = true
+                        webController.view.frame.origin.y = 0
+                   
+        }, completion: nil)
+    }
+}
 extension ClinicMapsViewController: GMSMapViewDelegate {
     
     func mapView(_ mapView: GMSMapView, markerInfoWindow marker: GMSMarker) -> UIView? {
@@ -114,7 +148,8 @@ extension ClinicMapsViewController: GMSMapViewDelegate {
         guard let clinicMarker = marker as? ClinicsMarker else { return false }
         guard let markerView = UINib.init(nibName: "ClinicsMarkerView", bundle: nil).instantiate(withOwner: nil, options: nil).first as? ClinicsMarkerView else { return false }
         self.markerView = markerView
-        self.markerView?.delegate = self
+        self.markerView?.closeButtonDelegate = self
+        self.markerView?.openBrowserDelegate = self
         self.view.addSubview(markerView)
         let guide = self.view.safeAreaLayoutGuide
         let width = guide.layoutFrame.size.width
@@ -135,7 +170,7 @@ extension ClinicMapsViewController: GMSMapViewDelegate {
         markerView.nameLabel.text = clinicMarker.clinic.name
         markerView.snippetLabel.text = clinicMarker.clinic.snippet
         markerView.telephoneLabel.text = clinicMarker.clinic.telephone
-        markerView.websiteLabel.text = clinicMarker.clinic.website
+        markerView.websiteTextView.text = clinicMarker.clinic.website
         UIView.animate(withDuration: 0.3) {
             self.mapView.padding = UIEdgeInsets.init(top: self.view.safeAreaInsets.top, left: 0, bottom: markerView.frame.size.height, right: 0)
         }

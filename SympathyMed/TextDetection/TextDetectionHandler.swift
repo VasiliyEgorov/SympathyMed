@@ -65,11 +65,11 @@ class TextDetectionHandler: NSObject {
     private func tryToRecognizeTextIn(boxFrame: CGRect) {
       
         if textRecognizer.isRunning == false {
+           
             let snapshot = getImageFromSampleBuffer(sampleBuffer: buffer)
             let resizedToCurrentScreen = UIImage.resizeImage(image: snapshot, to: UIScreen.main.bounds.size)
-            let cropped = UIImage.crop(image: resizedToCurrentScreen, to: captionView.bounds)
-            if let cropped = cropped {
-                textRecognizer.inputImage = CIImage.init(image: cropped)
+            if let resized = resizedToCurrentScreen {
+                textRecognizer.inputImage = CIImage.init(image: resized)
             }
         }
     }
@@ -122,4 +122,5 @@ extension TextDetectionHandler: AVCaptureVideoDataOutputSampleBufferDelegate {
         }
     }
 }
+
 
